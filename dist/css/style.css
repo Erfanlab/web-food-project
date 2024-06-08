@@ -8760,7 +8760,6 @@ h1:focus-visible, .h1:focus-visible {
   background-color: #ffffff;
   width: 300px;
   height: 90%;
-  border-radius: 10px;
   transition: all 0.2s ease; }
 
 .foodtoday:hover {
