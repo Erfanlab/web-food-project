@@ -8,7 +8,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <link rel="stylesheet" type="text/css" href="css/style.min.css">
-<script src="../main/script.js" defer=""></script>
 
   </head>
 
@@ -38,6 +37,13 @@
   <symbol id="iconperson" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
     <path opacity="0.4" d="M12.1601 10.87C12.0601 10.86 11.9401 10.86 11.8301 10.87C9.45006 10.79 7.56006 8.84 7.56006 6.44C7.56006 3.99 9.54006 2 12.0001 2C14.4501 2 16.4401 3.99 16.4401 6.44C16.4301 8.84 14.5401 10.79 12.1601 10.87Z" stroke="#5BC4BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
     <path d="M7.15997 14.56C4.73997 16.18 4.73997 18.82 7.15997 20.43C9.90997 22.27 14.42 22.27 17.17 20.43C19.59 18.81 19.59 16.17 17.17 14.56C14.43 12.73 9.91997 12.73 7.15997 14.56Z" stroke="#5BC4BF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
+  <symbol id="logOut" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+    <path d="M8.90002 7.56001C9.21002 3.96001 11.06 2.49001 15.11 2.49001H15.24C19.71 2.49001 21.5 4.28001 21.5 8.75001V15.27C21.5 19.74 19.71 21.53 15.24 21.53H15.11C11.09 21.53 9.24002 20.08 8.91002 16.54" stroke="#ADB5BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <g opacity="0.4">
+      <path d="M14.9991 12H3.61914" stroke="#ADB5BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      <path d="M5.85 8.65039L2.5 12.0004L5.85 15.3504" stroke="#ADB5BD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    </g>
   </symbol>
 </svg>
 
@@ -105,11 +111,53 @@
         <div class="h-100 d-flex flex-column justify-content-center align-items-center" style="width: 14%">
           <img src="https://s31.picofile.com/file/8476539834/person.png" alt="logoPerson">
         </div>
-        <li class="btnDropDown px-2">&#10095;</li>
+        
+        <li class="btnDropDown1 px-2" onclick="">&#10095;</li>
+        <div class="position-absolute modal-user fw-bold" id="modal-user">
+          <div class="pt-1 px-3 d-flex flex-column justify-content-center">
+            <div class="slidhover d-flex justify-content-between p-2">
+              <div>17000امتیاز</div>
+              <div>کیف‌گذر</div>
+            </div>
+            <div class="slidhover d-flex justify-content-between p-2">
+              <div>180.000 تومان</div>
+              <div>اعتبار‌نقدی</div>
+            </div>
+            <div class="slidhover d-flex justify-content-between p-2">
+              <div>1200امتیاز</div>
+              <div>اعتبارامتیازی</div>
+            </div>
+            <div class="slidhover d-flex justify-content-between p-2">
+              <div>234567897</div>
+              <div>شماره‌پرسنلی</div>
+            </div>
+            <div class="slidhover d-flex justify-content-between p-2">
+              <div>کارشناس</div>
+              <div>نوع‌کارمند</div>
+            </div>
+            <hr class="m-0">
+          </div>
+          <div class="d-flex flex-column pb-1 px-3 pt-2" dir="rtl">
+            <div class="slidhover p-2">شریعتی-پرسنل</div>
+            <div class="slidhover p-2">اطلس-پرسنل</div>
+            <hr class="m-0">
+          </div>
+          <div class="slidhover mx-2 d-flex pe-2 pt-2" dir="rtl" style="width: 200px;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <use href="#logOut"></use>
+              </svg>
+              <div>خروج</div>
+          </div>
+        </div>   
       </div>
+     
+      
     </div>
   </div>
+
 </header>
+
+
 
     <!-- end navbar -->
 
@@ -117,13 +165,54 @@
     
     <!-- end hero -->
 
-    <main class="d-flex justify-content-center align-content-center overflow-hidden" dir="rtl" style="width: 100%; height: 90% ">
+    <svg class="d-none">
+<symbol id="chevron-left" xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+<g filter="url(#filter0_d_60_770)">
+  <rect x="4" y="2" width="50" height="50" rx="25" fill="white"></rect>
+  <path d="M32 34.92L25.48 28.4C24.71 27.63 24.71 26.37 25.48 25.6L32 19.08" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+  </g>
+  <defs>
+  <filter id="filter0_d_60_770" x="0" y="0" width="58" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+  <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+  <feOffset dy="2"></feOffset>
+  <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.075 0"></feColorMatrix>
+  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_60_770"></feBlend>
+  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_60_770" result="shape"></feBlend>
+  </filter>
+  </defs>
+</symbol>
+<symbol id="user-Condition-angry" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+  <path d="M6.75 16.5H11.25C15 16.5 16.5 15 16.5 11.25V6.75C16.5 3 15 1.5 11.25 1.5H6.75C3 1.5 1.5 3 1.5 6.75V11.25C1.5 15 3 16.5 6.75 16.5Z" stroke="#3D8BFD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M5.25 6.5625C6 5.8125 7.2225 5.8125 7.98 6.5625" stroke="#3D8BFD" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M10.02 6.5625C10.77 5.8125 11.9925 5.8125 12.75 6.5625" stroke="#3D8BFD" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M6.3 13.275H11.7C12.075 13.275 12.375 12.975 12.375 12.6C12.375 10.7325 10.8675 9.22501 9 9.22501C7.1325 9.22501 5.625 10.7325 5.625 12.6C5.625 12.975 5.925 13.275 6.3 13.275Z" stroke="#3D8BFD" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+</symbol>
+<symbol id="user-Condition-midel" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+  <path d="M6.75 16.5H11.25C15 16.5 16.5 15 16.5 11.25V6.75C16.5 3 15 1.5 11.25 1.5H6.75C3 1.5 1.5 3 1.5 6.75V11.25C1.5 15 3 16.5 6.75 16.5Z" stroke="#3D8BFD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M5.25 6.1875C6 6.9375 7.2225 6.9375 7.98 6.1875" stroke="#3D8BFD" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M10.02 6.1875C10.77 6.9375 11.9925 6.9375 12.75 6.1875" stroke="#3D8BFD" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M6.3 9.75H11.7C12.075 9.75 12.375 10.05 12.375 10.425C12.375 12.2925 10.8675 13.8 9 13.8C7.1325 13.8 5.625 12.2925 5.625 10.425C5.625 10.05 5.925 9.75 6.3 9.75Z" stroke="#3D8BFD" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+</symbol>
+<symbol id="user-Condition-happy" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+  <path d="M6.75 16.5H11.25C15 16.5 16.5 15 16.5 11.25V6.75C16.5 3 15 1.5 11.25 1.5H6.75C3 1.5 1.5 3 1.5 6.75V11.25C1.5 15 3 16.5 6.75 16.5Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M11.625 7.3125C12.2463 7.3125 12.75 6.80882 12.75 6.1875C12.75 5.56618 12.2463 5.0625 11.625 5.0625C11.0037 5.0625 10.5 5.56618 10.5 6.1875C10.5 6.80882 11.0037 7.3125 11.625 7.3125Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M6.375 7.3125C6.99632 7.3125 7.5 6.80882 7.5 6.1875C7.5 5.56618 6.99632 5.0625 6.375 5.0625C5.75368 5.0625 5.25 5.56618 5.25 6.1875C5.25 6.80882 5.75368 7.3125 6.375 7.3125Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M6.3 9.97501H11.7C12.075 9.97501 12.375 10.275 12.375 10.65C12.375 12.5175 10.8675 14.025 9 14.025C7.1325 14.025 5.625 12.5175 5.625 10.65C5.625 10.275 5.925 9.97501 6.3 9.97501Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+</symbol>
+
+
+
+
+</svg>
+<main class="d-flex justify-content-center align-content-center overflow-hidden" dir="rtl" style="width: 100%; height: 90% ">
   <div class="home h-100 d-flex flex-row">
       <div class="h-100  d-flex flex-column align-items-center mt-4 flex-shrink-0 " style="width: 380px;">
         <div class="slidup border-0 my-3 rounded-4 bg-white  shadow-sm " style="width:90%;height: 180px;">
-          <div class="w-100 p-3 d-flex flex-row align-items-center justify-content-between border-bottom" style="height: 30%">
-            <div class="fw-bold fs-6">برنامه امروز</div>
-            <div class="text-muted fs-7" style="font-family: sans-serif;">1403/03/13</div>
+          <div class="titlecal w-100 p-3 d-flex flex-row align-items-center justify-content-between border-bottom">
+            <div class="fw-bold">برنامه امروز</div>
+            <div class="text-muted" style="font-size: 10px;" id="today">1403/03/13</div>
           </div>
           <div class="w-100 h-25 d-flex flex-row mt-2 px-2 justify-content-between align-items-center">
             <div class="lineRightup w-75 h-100 px-2 d-flex flex-column justify-content-center align-content-center">
@@ -221,24 +310,34 @@
 
 <div class="cards mt-2 w-100">
           <!-- section  -->
-            <div class="foodcards mt-5 rounded-3 d-flex flex-column flex-shrink-0 w-100">
+            <div class="foodcards mt-4 rounded-3 d-flex flex-column flex-shrink-0">
+              <div class="chevron-select-left">
+                <svg id="btn-right" width="58" height="58" viewBox="0 0 58 58">
+                  <use href="#chevron-left"></use>
+                </svg>
+              </div>
+              <div class="chevron-select-right">
+                <svg id="btn-left" width="58" height="58" viewBox="0 0 58 58">
+                  <use href="#chevron-left"></use>
+                </svg>
+              </div>
   <div class="me-3 d-flex gap-2"> <p class="fw-bold fs-6 m-0">امروز</p> 
-     <p class="d-flex justify-content-center align-items-center text-muted m-0" style="font-size:11px; font-family:sans-serif;">1403/03/06</p>
+     <p class="d-flex justify-content-center align-items-center text-muted m-0" style="font-size:11px; font-family:sans-serif;" id="today2">1403/03/06</p>
   </div>
-  <div class="foodcard d-flex gap-4 mt-2 justify-content-start align-items-start">
+  <div class="foodcard  d-flex gap-4 mt-2 justify-content-start align-items-start" id="con">
     <!-- food1 -->
     <div class="foodtoday shadow-sm rounded-3 pb-3 bg-body-tertiary flex-shrink-0">
       <div class="imagefood">
         <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476435976/Rectangle_1.png" alt="food1">
       </div>
-      <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-        <div class="w-100 fw-bold fs-6">چلو کباب سلطانی </div>
-        <div class="dropdown d-flex justify-content-between align-items-center">
-          <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
+      <div class="textCard d-flex  flex-column justify-content-between">
+        <div class="w-100 fw-bold fs-6 tittle-food">چلو کباب سلطانی </div>
+        <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+          <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
             <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
             <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
           </div>
-          <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+          <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
         </div>
 
       </div>
@@ -248,14 +347,14 @@
       <div class="imagefood">
         <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476436434/food2.png" alt="food1">
       </div>
-      <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-        <div class="w-100 fw-bold fs-6">چلو خورشت قیمه بادمجان</div>
-        <div class="dropdown d-flex justify-content-between align-items-center">
-          <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
-            <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">180</p>
+      <div class="textCard d-flex flex-column justify-content-between">
+        <div class="w-100 fw-bold fs-6 tittle-food">چلو خورشت قیمه بادمجان</div>
+        <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+          <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
+            <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
             <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
           </div>
-          <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+          <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
         </div>
 
       </div>
@@ -265,14 +364,14 @@
       <div class="imagefood">
         <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476436326/food3.png" alt="food1">
       </div>
-      <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-        <div class="w-100 fw-bold fs-6">چلو خورشت قورمه سبزی</div>
-        <div class="dropdown d-flex justify-content-between align-items-center">
-          <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
-            <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">190</p>
+      <div class="textCard d-flex flex-column justify-content-between">
+        <div class="w-100 fw-bold fs-6 tittle-food">چلو خورشت قورمه سبزی</div>
+        <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+          <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
+            <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
             <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
           </div>
-          <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+          <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
         </div>
 
       </div>
@@ -280,16 +379,16 @@
     <!-- food4 -->
     <div class="foodtoday shadow-sm rounded-3 pb-3 bg-body-tertiary flex-shrink-0">
       <div class="imagefood">
-        <img class="imgfoo" style="height: 100%; width: 100%;" src="hhttps://s30.picofile.com/file/8476436884/food4.png" alt="food1">
+        <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476436884/food4.png" alt="food4">
       </div>
-      <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-        <div class="w-100 fw-bold fs-6">چلو اکبر جوجه مخصوص</div>
-        <div class="dropdown d-flex justify-content-between align-items-center">
-          <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
-            <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">280</p>
+      <div class="textCard d-flex flex-column justify-content-between">
+        <div class="w-100 fw-bold fs-6 tittle-food">چلو اکبر جوجه مخصوص</div>
+        <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+          <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
+            <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
             <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
           </div>
-          <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+          <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
         </div>
 
       </div>
@@ -299,14 +398,14 @@
       <div class="imagefood">
         <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476443076/food5.png" alt="food1">
       </div>
-      <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-        <div class="w-100 fw-bold fs-6">ته چین مرغ</div>
-        <div class="dropdown d-flex justify-content-between align-items-center">
-          <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
+      <div class="textCard d-flex flex-column justify-content-between">
+        <div class="w-100 fw-bold fs-6 tittle-food">ته چین مرغ</div>
+        <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+          <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
             <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
             <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
           </div>
-          <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+          <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
         </div>
 
       </div>
@@ -314,23 +413,34 @@
   </div>
               </div>
                     <!-- section  -->
-            <div class="foodcards d-flex rounded-3 flex-column w-100 flex-shrink-0">
+            <div class="foodcards  rounded-3 d-flex flex-column flex-shrink-0">
+              <div class="chevron-select-left">
+                <svg id="btn-right1" width="58" height="58" viewBox="0 0 58 58">
+                  <use href="#chevron-left"></use>
+                </svg>
+              </div>
+              <div class="chevron-select-right">
+                <svg id="btn-left1" width="58" height="58" viewBox="0 0 58 58">
+                  <use href="#chevron-left"></use>
+                </svg>
+              </div>
+          
                       <div class="me-3 d-flex gap-2"> <p class="fw-bold fs-6 m-0">یکشنبه</p> 
-                         <p class="d-flex justify-content-center align-items-center textMTU m-0" style="font-size:11px; font-family:sans-serif;">1403/03/06</p>
+                         <p class="d-flex justify-content-center align-items-center textMTU m-0" style="font-size:11px; font-family:sans-serif;" [id]="today2">1403/03/06</p>
                       </div>
-                      <div class="foodcard w-100 d-flex gap-4 mt-2 justify-content-start align-items-start overflow-x-scroll overflow-y-hidden">
+                      <div class="foodcard d-flex gap-4 mt-2 justify-content-start align-items-start overflow-x-scroll overflow-y-hidden" id="con1">
                         <div class="foodtoday shadow-sm rounded-3 pb-3  bg-body-tertiary flex-shrink-0">
                           <div class="imagefood">
                             <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476436884/food4.png" alt="food1">
                           </div>
-                          <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                            <div class="w-100 fw-bold fs-6">چلو اکبر جوجه مخصوص</div>
-                            <div class="dropdown d-flex justify-content-between align-items-center">
-                              <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
-                                <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">280</p>
+                          <div class="textCard d-flex flex-column justify-content-between">
+                            <div class="w-100 fw-bold fs-6 tittle-food">چلو اکبر جوجه مخصوص</div>
+                            <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                              <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
+                                <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                                 <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                               </div>
-                              <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                              <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                             </div>
                     
                           </div>
@@ -340,14 +450,14 @@
                           <div class="imagefood">
                             <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476443076/food5.png" alt="food1">
                           </div>
-                          <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                            <div class="w-100 fw-bold fs-6">ته چین مرغ</div>
-                            <div class="dropdown d-flex justify-content-between align-items-center">
-                              <div class="btnPoint d-flex justify-content-center text-center align-items-center rounded gap-1  bg-body-tertiary" style="height: 80%;">
+                          <div class="textCard d-flex  flex-column justify-content-between">
+                            <div class="w-100 fw-bold fs-6 tittle-food">ته چین مرغ</div>
+                            <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                              <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
                                 <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                                 <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                               </div>
-                              <div class="btnPoint d-flex align-items-center justify-content-center btn  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                              <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                             </div>
                     
                           </div>
@@ -357,14 +467,14 @@
                           <div class="imagefood">
                             <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476435976/Rectangle_1.png" alt="food1">
                           </div>
-                          <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                            <div class="w-100 fw-bold fs-6">چلو کباب سلطانی </div>
-                            <div class="dropdown d-flex justify-content-between align-items-center">
-                              <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
+                          <div class="textCard d-flex  flex-column justify-content-between">
+                            <div class="w-100 fw-bold fs-6 tittle-food">چلو کباب سلطانی </div>
+                            <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                              <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
                                 <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                                 <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                               </div>
-                              <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                              <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                             </div>
                     
                           </div>
@@ -374,14 +484,14 @@
                           <div class="imagefood">
                             <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476436434/food2.png" alt="food1">
                           </div>
-                          <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                            <div class="w-100 fw-bold fs-6">چلو خورشت قیمه بادمجان</div>
-                            <div class="dropdown d-flex justify-content-between align-items-center">
-                              <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
-                                <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">180</p>
+                          <div class="textCard d-flex  flex-column justify-content-between">
+                            <div class="w-100 fw-bold fs-6 tittle-food">چلو خورشت قیمه بادمجان</div>
+                            <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                              <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
+                                <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                                 <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                               </div>
-                              <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                              <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                             </div>
                     
                           </div>
@@ -391,14 +501,14 @@
                           <div class="imagefood">
                             <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476436326/food3.png" alt="food1">
                           </div>
-                          <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                            <div class="w-100 fw-bold fs-6">چلو خورشت قورمه سبزی</div>
-                            <div class="dropdown d-flex justify-content-between align-items-center">
-                              <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
-                                <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">190</p>
+                          <div class="textCard d-flex  flex-column justify-content-between">
+                            <div class="w-100 fw-bold fs-6 tittle-food">چلو خورشت قورمه سبزی</div>
+                            <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                              <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
+                                <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                                 <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                               </div>
-                              <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                              <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                             </div>
                     
                           </div>
@@ -408,24 +518,34 @@
                       </div>
             </div>
                       <!-- section  -->
-           <div class="foodcards d-flex rounded-3 flex-column w-100 flex-shrink-0">
+           <div class="foodcards d-flex rounded-3 flex-column flex-shrink-0">
+            <div class="chevron-select-left">
+              <svg id="btn-right2" width="58" height="58" viewBox="0 0 58 58">
+                <use href="#chevron-left"></use>
+              </svg>
+            </div>
+            <div class="chevron-select-right">
+              <svg id="btn-left2" width="58" height="58" viewBox="0 0 58 58">
+                <use href="#chevron-left"></use>
+              </svg>
+            </div>
                                 <div class="me-3 d-flex gap-2"> <p class="fw-bold fs-6 m-0">دوشنبه</p> 
                                    <p class="d-flex justify-content-center align-items-center textMTU m-0" style="font-size:11px; font-family:sans-serif;">1403/03/06</p>
                                 </div>
-                                <div class="foodcard w-100 d-flex gap-4 mt-2 justify-content-start align-items-start overflow-x-scroll overflow-y-hidden">
+                                <div class="foodcard  d-flex gap-4 mt-2 justify-content-start align-items-start overflow-x-scroll overflow-y-hidden" id="con2">
                                   <!-- food1 -->
                                   <div class="foodtoday shadow-sm rounded-3 pb-3 bg-body-tertiary flex-shrink-0">
                                     <div class="imagefood">
                                       <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476436434/food2.png" alt="food1">
                                     </div>
-                                    <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                                      <div class="w-100 fw-bold fs-6">چلو خورشت قیمه بادمجان</div>
-                                      <div class="dropdown d-flex justify-content-between align-items-center">
-                                        <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
-                                          <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">180</p>
+                                    <div class="textCard d-flex  flex-column justify-content-between">
+                                      <div class="w-100 fw-bold fs-6 tittle-food">چلو خورشت قیمه بادمجان</div>
+                                      <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                                        <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
+                                          <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                                           <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                                         </div>
-                                        <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                                        <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                                       </div>
                               
                                     </div>
@@ -435,14 +555,14 @@
                                     <div class="imagefood">
                                       <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476435976/Rectangle_1.png" alt="food1">
                                     </div>
-                                    <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                                      <div class="w-100 fw-bold fs-6">چلو کباب سلطانی </div>
-                                      <div class="dropdown d-flex justify-content-between align-items-center">
-                                        <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
+                                    <div class="textCard d-flex  flex-column justify-content-between">
+                                      <div class="w-100 fw-bold fs-6 tittle-food">چلو کباب سلطانی </div>
+                                      <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                                        <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
                                           <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                                           <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                                         </div>
-                                        <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                                        <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                                       </div>
                               
                                     </div>
@@ -452,14 +572,14 @@
                                     <div class="imagefood">
                                       <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476443076/food5.png" alt="food1">
                                     </div>
-                                    <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                                      <div class="w-100 fw-bold fs-6">ته چین مرغ</div>
-                                      <div class="dropdown d-flex justify-content-between align-items-center">
-                                        <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
+                                    <div class="textCard d-flex  flex-column justify-content-between">
+                                      <div class="w-100 fw-bold fs-6 tittle-food">ته چین مرغ</div>
+                                      <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                                        <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
                                           <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                                           <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                                         </div>
-                                        <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                                        <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                                       </div>
                               
                                     </div>
@@ -469,14 +589,14 @@
                                     <div class="imagefood">
                                       <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476436326/food3.png" alt="food1">
                                     </div>
-                                    <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                                      <div class="w-100 fw-bold fs-6">چلو خورشت قورمه سبزی</div>
-                                      <div class="dropdown d-flex justify-content-between align-items-center">
-                                        <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
-                                          <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">190</p>
+                                    <div class="textCard d-flex  flex-column justify-content-between">
+                                      <div class="w-100 fw-bold fs-6 tittle-food">چلو خورشت قورمه سبزی</div>
+                                      <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                                        <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
+                                          <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                                           <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                                         </div>
-                                        <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                                        <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                                       </div>
                               
                                     </div>
@@ -486,14 +606,14 @@
                                     <div class="imagefood">
                                       <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476436884/food4.png" alt="food1">
                                     </div>
-                                    <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                                      <div class="w-100 fw-bold fs-6">چلو اکبر جوجه مخصوص</div>
-                                      <div class="dropdown d-flex justify-content-between align-items-center">
-                                        <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
-                                          <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">280</p>
+                                    <div class="textCard d-flex  flex-column justify-content-between">
+                                      <div class="w-100 fw-bold fs-6 tittle-food">چلو اکبر جوجه مخصوص</div>
+                                      <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                                        <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
+                                          <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                                           <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                                         </div>
-                                        <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                                        <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                                       </div>
                               
                                     </div>
@@ -502,23 +622,33 @@
                                 </div>
           </div>
                      <!-- section  -->
-          <div class="foodcards d-flex rounded-3 flex-column w-100 flex-shrink-0">
+          <div class="foodcards d-flex rounded-3 flex-column flex-shrink-0">
+            <div class="chevron-select-left">
+              <svg id="btn-right3" width="58" height="58" viewBox="0 0 58 58">
+                <use href="#chevron-left"></use>
+              </svg>
+            </div>
+            <div class="chevron-select-right">
+              <svg id="btn-left3" width="58" height="58" viewBox="0 0 58 58">
+                <use href="#chevron-left"></use>
+              </svg>
+            </div>
             <div class="me-3 d-flex gap-2"> <p class="fw-bold fs-6 m-0">سه شنبه</p> 
                <p class="d-flex justify-content-center align-items-center textMTU m-0" style="font-size:11px; font-family:sans-serif;">1403/03/06</p>
             </div>
-            <div class="foodcard w-100 d-flex gap-4 mt-2 justify-content-start align-items-start overflow-x-scroll overflow-y-hidden">
+            <div class="foodcard  d-flex gap-4 mt-2 justify-content-start align-items-start overflow-x-scroll overflow-y-hidden" id="con3">
               <div class="foodtoday shadow-sm rounded-3 pb-3 bg-body-tertiary flex-shrink-0">
                 <div class="imagefood">
                   <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476436326/food3.png" alt="food1">
                 </div>
-                <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                  <div class="w-100 fw-bold fs-6">چلو خورشت قورمه سبزی</div>
-                  <div class="dropdown d-flex justify-content-between align-items-center">
-                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
-                      <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">190</p>
+                <div class="textCard d-flex  flex-column justify-content-between">
+                  <div class="w-100 fw-bold fs-6 tittle-food">چلو خورشت قورمه سبزی</div>
+                  <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
+                      <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                       <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                     </div>
-                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                   </div>
           
                 </div>
@@ -528,14 +658,14 @@
                 <div class="imagefood">
                   <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476436884/food4.png" alt="food1">
                 </div>
-                <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                  <div class="w-100 fw-bold fs-6">چلو اکبر جوجه مخصوص</div>
-                  <div class="dropdown d-flex justify-content-between align-items-center">
-                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
-                      <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">280</p>
+                <div class="textCard d-flex  flex-column justify-content-between">
+                  <div class="w-100 fw-bold fs-6 tittle-food">چلو اکبر جوجه مخصوص</div>
+                  <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
+                      <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                       <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                     </div>
-                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                   </div>
           
                 </div>
@@ -545,14 +675,14 @@
                 <div class="imagefood">
                   <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476443076/food5.png" alt="food1">
                 </div>
-                <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                  <div class="w-100 fw-bold fs-6">ته چین مرغ</div>
-                  <div class="dropdown d-flex justify-content-between align-items-center">
-                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
+                <div class="textCard d-flex  flex-column justify-content-between">
+                  <div class="w-100 fw-bold fs-6 tittle-food">ته چین مرغ</div>
+                  <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
                       <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                       <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                     </div>
-                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                   </div>
           
                 </div>
@@ -562,14 +692,14 @@
                 <div class="imagefood">
                   <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476435976/Rectangle_1.png" alt="food1">
                 </div>
-                <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                  <div class="w-100 fw-bold fs-6">چلو کباب سلطانی </div>
-                  <div class="dropdown d-flex justify-content-between align-items-center">
-                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
+                <div class="textCard d-flex  flex-column justify-content-between">
+                  <div class="w-100 fw-bold fs-6 tittle-food">چلو کباب سلطانی </div>
+                  <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
                       <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                       <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                     </div>
-                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                   </div>
           
                 </div>
@@ -579,14 +709,14 @@
                 <div class="imagefood">
                   <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476436434/food2.png" alt="food1">
                 </div>
-                <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                  <div class="w-100 fw-bold fs-6">چلو خورشت قیمه بادمجان</div>
-                  <div class="dropdown d-flex justify-content-between align-items-center">
-                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
-                      <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">180</p>
+                <div class="textCard d-flex  flex-column justify-content-between">
+                  <div class="w-100 fw-bold fs-6 tittle-food">چلو خورشت قیمه بادمجان</div>
+                  <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
+                      <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                       <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                     </div>
-                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                   </div>
           
                 </div>
@@ -596,25 +726,36 @@
             </div>
           </div>
              <!-- section  -->
-          <div class="foodcards  d-flex rounded-3 flex-column w-100 flex-shrink-0">
+          <div class="foodcards  d-flex rounded-3 flex-column flex-shrink-0">
+            <div class="chevron-select-left">
+              <svg id="btn-right4" width="58" height="58" viewBox="0 0 58 58">
+                <use href="#chevron-left"></use>
+              </svg>
+            </div>
+            <div class="chevron-select-right">
+              <svg id="btn-left4" width="58" height="58" viewBox="0 0 58 58">
+                <use href="#chevron-left"></use>
+              </svg>
+            </div>
             <div class="me-3 d-flex gap-2"> <p class="fw-bold fs-6 m-0">چهارشنبه</p> 
                <p class="d-flex justify-content-center align-items-center textMTU m-0" style="font-size:11px; font-family:sans-serif;">1403/03/06</p>
             </div>
-            <div class="foodcard w-100 d-flex gap-4 mt-2 justify-content-start align-items-start overflow-x-scroll overflow-y-hidden">
+            <div class="foodcard d-flex gap-4 mt-2 justify-content-start align-items-start overflow-x-scroll overflow-y-hidden" id="con4">
               <!-- food1 -->
               <div class="foodtoday shadow-sm rounded-3 pb-3 bg-body-tertiary flex-shrink-0">
                 <div class="imagefood">
                   <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476435976/Rectangle_1.png" alt="food1">
                 </div>
-                <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                  <div class="w-100 fw-bold fs-6">چلو کباب سلطانی </div>
-                  <div class="dropdown d-flex justify-content-between align-items-center">
-                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
+                <div class="textCard d-flex  flex-column justify-content-between">
+                  <div class="w-100 fw-bold fs-6 tittle-food">چلو کباب سلطانی </div>
+                  <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
                       <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                       <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                     </div>
-                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                   </div>
+          
           
                 </div>
               </div>
@@ -623,15 +764,16 @@
                 <div class="imagefood">
                   <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476436434/food2.png" alt="food1">
                 </div>
-                <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                  <div class="w-100 fw-bold fs-6">چلو خورشت قیمه بادمجان</div>
-                  <div class="dropdown d-flex justify-content-between align-items-center">
-                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
-                      <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">180</p>
+                <div class="textCard d-flex  flex-column justify-content-between">
+                  <div class="w-100 fw-bold fs-6 tittle-food">چلو خورشت قیمه بادمجان</div>
+                  <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
+                      <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                       <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                     </div>
-                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                   </div>
+          
           
                 </div>
               </div>
@@ -640,15 +782,16 @@
                 <div class="imagefood">
                   <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476436326/food3.png" alt="food1">
                 </div>
-                <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                  <div class="w-100 fw-bold fs-6">چلو خورشت قورمه سبزی</div>
-                  <div class="dropdown d-flex justify-content-between align-items-center">
-                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
-                      <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">190</p>
+                <div class="textCard d-flex  flex-column justify-content-between">
+                  <div class="w-100 fw-bold fs-6 tittle-food">چلو خورشت قورمه سبزی</div>
+                  <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
+                      <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                       <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                     </div>
-                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                   </div>
+          
           
                 </div>
               </div>
@@ -657,15 +800,16 @@
                 <div class="imagefood">
                   <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476436884/food4.png" alt="food1">
                 </div>
-                <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                  <div class="w-100 fw-bold fs-6">چلو اکبر جوجه مخصوص</div>
-                  <div class="dropdown d-flex justify-content-between align-items-center">
-                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
-                      <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">280</p>
+                <div class="textCard d-flex  flex-column justify-content-between">
+                  <div class="w-100 fw-bold fs-6 tittle-food">چلو اکبر جوجه مخصوص</div>
+                  <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
+                      <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                       <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                     </div>
-                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                   </div>
+          
           
                 </div>
               </div>
@@ -674,15 +818,16 @@
                 <div class="imagefood">
                   <img class="imgfoo" style="height: 100%; width: 100%;" src="https://s30.picofile.com/file/8476443076/food5.png" alt="food1">
                 </div>
-                <div class="textCard d-flex gap-3 py-2 flex-column justify-content-center">
-                  <div class="w-100 fw-bold fs-6">ته چین مرغ</div>
-                  <div class="dropdown d-flex justify-content-between align-items-center">
-                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" style="height: 80%;">
+                <div class="textCard d-flex  flex-column justify-content-between">
+                  <div class="w-100 fw-bold fs-6 tittle-food">ته چین مرغ</div>
+                  <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
+                    <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary">
                       <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1">210</p>
                       <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50">امتیاز</p>
                     </div>
-                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0" style="height: 80%;">رزرو</div>  
+                    <div class="btnPoint d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0">رزرو</div>  
                   </div>
+          
           
                 </div>
               </div>

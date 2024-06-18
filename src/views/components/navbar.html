@@ -99,6 +99,38 @@
       stroke-linejoin="round"
     />
   </symbol>
+  <symbol
+    id="logOut"
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+  >
+    <path
+      d="M8.90002 7.56001C9.21002 3.96001 11.06 2.49001 15.11 2.49001H15.24C19.71 2.49001 21.5 4.28001 21.5 8.75001V15.27C21.5 19.74 19.71 21.53 15.24 21.53H15.11C11.09 21.53 9.24002 20.08 8.91002 16.54"
+      stroke="#ADB5BD"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <g opacity="0.4">
+      <path
+        d="M14.9991 12H3.61914"
+        stroke="#ADB5BD"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M5.85 8.65039L2.5 12.0004L5.85 15.3504"
+        stroke="#ADB5BD"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+    </g>
+  </symbol>
 </svg>
 
 <header
@@ -211,8 +243,52 @@
             alt="logoPerson"
           />
         </div>
-        <li class="btnDropDown px-2">&#10095;</li>
+        
+        <li class="btnDropDown1 px-2" onclick="">&#10095;</li>
+        <div class="position-absolute modal-user fw-bold" id="modal-user">
+          <div
+            class="pt-1 px-3 d-flex flex-column justify-content-center"
+          >
+            <div class="slidhover d-flex justify-content-between p-2">
+              <div>17000امتیاز</div>
+              <div>کیف‌گذر</div>
+            </div>
+            <div class="slidhover d-flex justify-content-between p-2">
+              <div>180.000 تومان</div>
+              <div>اعتبار‌نقدی</div>
+            </div>
+            <div class="slidhover d-flex justify-content-between p-2">
+              <div>1200امتیاز</div>
+              <div>اعتبارامتیازی</div>
+            </div>
+            <div class="slidhover d-flex justify-content-between p-2">
+              <div>234567897</div>
+              <div>شماره‌پرسنلی</div>
+            </div>
+            <div class="slidhover d-flex justify-content-between p-2">
+              <div>کارشناس</div>
+              <div>نوع‌کارمند</div>
+            </div>
+            <hr class="m-0"></hr>
+          </div>
+          <div class="d-flex flex-column pb-1 px-3 pt-2" dir="rtl">
+            <div class="slidhover p-2">شریعتی-پرسنل</div>
+            <div class="slidhover p-2">اطلس-پرسنل</div>
+            <hr class="m-0">
+          </div>
+          <div class="slidhover mx-2 d-flex pe-2 pt-2" dir="rtl" style="width: 200px;">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <use href="#logOut"></use>
+              </svg>
+              <div>خروج</div>
+          </div>
+        </div>   
       </div>
+     
+      
     </div>
   </div>
+
 </header>
+
+
