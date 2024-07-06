@@ -346,15 +346,21 @@ h1:focus-visible {
   margin: 0;
 }
 .modal-user {
-  display: none;
   font-size: 14px;
   z-index: 100;
   background-color: var(--withe);
-  width: 216px;
+  width: 220px;
   height: 320px;
   border-radius: 5px;
   top: 85px;
   left: auto;
+}
+#btnDropDown {
+  transition: all 0.2s ease;
+}
+.rotate-180 {
+  rotate: 90deg;
+  transition: all 0.2s ease-in-out;
 }
 .slidhover {
   padding: 5px;

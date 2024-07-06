@@ -120,7 +120,7 @@
   document.getElementById("today").innerHTML = jalalitoday;
   document.getElementById("today2").innerHTML = jalalitoday;
 
-  function modalshow() {
-    var element = document.getElementById("modal-user");
-    element.classList.toggle("display:flex");
- }
+
+  function moood() {
+    document.querySelector('div.modal-user');
+  }
