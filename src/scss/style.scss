@@ -331,16 +331,16 @@ h1:focus-visible {
 .btnPoint {
   background-color: #ffffff;
   cursor: pointer;
-  width: 83px;
+  width: 95px;
   height: 30px;
   border: 2px solid $border-color;
   font-size: 12px;
   transition: all 0.2s ease;
 }
 .btnPoint:hover {
-  background-color: #0085ff;
+  background-color: #004562;
   color: #ffffff;
-  border: 2px solid #0085ff;
+  border: 2px solid #004562;
   margin: 0;
 }
 .textMTU {
@@ -357,7 +357,8 @@ h1:focus-visible {
   top: 85px;
   left: auto;
 }
-#btnDropDown-wallet {
+#btnDropDown-wallet,
+#dropdownresreve {
   transition: all 0.2s ease;
 }
 #btnDropDown {

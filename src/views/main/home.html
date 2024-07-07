@@ -133,11 +133,15 @@
       <div class="textCard d-flex  flex-column justify-content-between">
         <div class="w-100 fw-bold fs-6 tittle-food">چلو کباب سلطانی </div>
         <div class="dropdown mb-2 d-flex justify-content-between align-items-center">
-          <div class="btnPoint d-flex justify-content-center text-center align-items-center  rounded gap-1  bg-body-tertiary" onclick="foodPoint()">
+          <div class="btnPoint d-flex justify-content-between text-center align-items-center  rounded gap-1  bg-body-tertiary" onclick="foodPoint()">
             <p class="fs-6 d-flex align-items-center justify-content-center h-100 m-0 w-25 pe-1" >210</p>
             <p class="d-flex align-items-center justify-content-center fs-7 textMTU h-100 m-0 w-50" >امتیاز</p>
           </div>
-          <div class="btnPoint position-relative d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0"  onclick="foodReserve()">رزرو</div> 
+          <div class="btnPoint position-relative d-flex align-items-center justify-content-center btn btn-light  dropdown fs-6 m-0"  onclick="foodReserve()"><div>رزرو</div>
+            <li class="btnDropDown  mx-2" id="dropdownresreve" >&#10095;</li>
+
+          </div> 
+          
 
 
 
@@ -674,10 +678,11 @@
 
 function foodReserve() {
   document.getElementById("reser-food").classList.toggle("d-none");
+  document.getElementById("dropdownresreve").classList.toggle("rotate-180");
+
 
 }
 
-console.log(document.location);
 
 
 const modal = document.getElementById("modal-point-food");
