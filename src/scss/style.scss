@@ -277,8 +277,10 @@ h1:focus-visible {
     position: absolute;
     left: -1rem;
     bottom: 6rem;
+    z-index: 10;
   }
   .chevron-select-right {
+    z-index: 10;
     position: absolute;
     right: -4px;
     bottom: 6rem;
@@ -350,13 +352,48 @@ h1:focus-visible {
   z-index: 100;
   background-color: var(--withe);
   width: 220px;
-  height: 320px;
+  height: 350px;
   border-radius: 5px;
   top: 85px;
   left: auto;
 }
+#btnDropDown-wallet {
+  transition: all 0.2s ease;
+}
 #btnDropDown {
   transition: all 0.2s ease;
+}
+.modal-wallet {
+  font-size: 14px;
+  z-index: 100;
+  background-color: var(--withe);
+  width: 160px;
+  height: 130px;
+  border-radius: 5px;
+  top: 85px;
+  left: auto;
+}
+.modal-reserve {
+  font-size: 14px;
+  z-index: 100;
+  background-color: var(--withe);
+  width: 160px;
+  height: 90px;
+  border-radius: 5px;
+  bottom: 40px;
+  left: 5px;
+  box-shadow: 0 0 1px black;
+}
+.modal-point-food {
+  font-size: 14px;
+  z-index: 100;
+  background-color: var(--withe);
+  width: 160px;
+  height: 90px;
+  border-radius: 5px;
+  bottom: 40px;
+  right: 5px;
+  box-shadow: 0 0 1px black;
 }
 .rotate-180 {
   rotate: 90deg;
