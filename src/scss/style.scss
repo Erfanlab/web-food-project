@@ -52,6 +52,19 @@
     }
   }
 }
+
+.listMenuafter {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 9px;
+  transform: translate3d(0, 100%, 0);
+  border-radius: 6px;
+  background-color: #0085ff;
+  transition: transform 0.2s ease;
+}
+
 .pay-up {
   font-size: 10px;
 }
@@ -80,8 +93,7 @@ header {
   flex-direction: column;
 }
 .titlecal {
-  height: 30%;
-  border-color: #9e9e9e6e;
+  border-color: #dbdbdbc9;
 }
 
 h1:focus-visible {
@@ -90,7 +102,6 @@ h1:focus-visible {
 .btnDropDown {
   cursor: pointer;
   list-style: none;
-  rotate: -90deg;
   &:active {
     color: #0085ff;
   }
@@ -366,6 +377,7 @@ h1:focus-visible {
 }
 .modal-wallet {
   font-size: 14px;
+  font-weight: lighter;
   z-index: 100;
   background-color: var(--withe);
   width: 160px;
@@ -397,7 +409,7 @@ h1:focus-visible {
   box-shadow: 0 0 1px black;
 }
 .rotate-180 {
-  rotate: 90deg;
+  rotate: 180deg;
   transition: all 0.2s ease-in-out;
 }
 .slidhover {

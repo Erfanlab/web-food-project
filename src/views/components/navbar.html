@@ -44,6 +44,7 @@
           >
             <a onclick="home1()"
               class="listMenu d-flex flex-shrink-0 justify-content-center align-items-center text-body-emphasis h-100"
+              id="listMenuafter"
             >
               کافی شاپ
             </a>
@@ -102,7 +103,10 @@
        
           </div>   
         </div>
-        <li class="btnDropDown  px-1 mx-2" id="btnDropDown-wallet">&#10095;</li>
+        <svg class="btnDropDown  px-1 mx-2"  id="btnDropDown-wallet"  xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+          <use href="#chevron-down">
+          </use>
+        </svg>
       </div>
       <div
         class="nav-bar-user gap-2 h-100 d-flex justify-content-start align-items-center"
@@ -134,7 +138,11 @@
           />
         </div>
         
-        <li class="btnDropDown  px-1 mx-2" id="btnDropDown" >&#10095;</li>
+        <svg class="btnDropDown  px-1 mx-2"  id="btnDropDown"  xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+          <use href="#chevron-down">
+
+          </use>
+        </svg>
         <div class="position-absolute modal-user overflow-scroll fw-bold d-none flex-column" id="modal-user">
           <div
             class="p-2 gap-1 d-flex flex-column justify-content-center"
@@ -198,9 +206,9 @@
  function home1(){
   const main1= document.getElementById("main1").classList.remove("d-flex")
   const main2= document.getElementById("main1").classList.add("d-none")
-  
   document.getElementById("main2").classList.remove("d-none")
   document.getElementById("main2").classList.add("d-flex")
+
 
  }
 

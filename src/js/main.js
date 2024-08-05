@@ -119,6 +119,9 @@
   let jalalitoday= new Date().toLocaleDateString('fa-IR');
   document.getElementById("today").innerHTML = jalalitoday;
   document.getElementById("today2").innerHTML = jalalitoday;
+  document.getElementById("today-page2").innerHTML = jalalitoday;
+  document.getElementById("today2-page-2").innerHTML = jalalitoday;
+
 
 
   function moood() {
