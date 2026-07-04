@@ -10,6 +10,11 @@ Styling: Tailwind CSS, Bootstrap
 
 Version Control: Git, GitHub
 
+
+# npm i
+# npm start
+# local:4200
+use postman 
 🚀 About This Project
 
 The Web Food Project is a personal endeavor to build a dynamic and user-friendly food ordering platform. The application showcases my skills in:
